@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economizando Mesada </title>
+</head>
+<body>
+    <h1>Exercício 25</h1>
+    <p>Você recebeu uma mesada de R$50,00 e decidiu economizar R$15,00. Quanto dinheiro
+        você terá sobrando?
+        </p>
+
+        <div id="resultadoDinheiro"></div>
+  <script>
+
+    let totalMesada = 50.00;
+
+
+    let valorEconomizado = 15.00;
+
+    let dinheiroSobrando = totalMesada - valorEconomizado;
+
+    document.getElementById('resultadoDinheiro').innerHTML = `Dinheiro sobrando: R$${dinheiroSobrando.toFixed(2)}`;
+
+
+  </script>
+</body>
+</html>

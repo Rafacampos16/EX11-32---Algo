@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprando Livros </title>
+</head>
+<body>
+    <h1>Exercício 31</h1>
+    <p>Peça ao usuário para inserir o preço de um livro. Calcule o valor total da compra com
+        desconto de 10%.</p>
+        <div id="resultadoTotal"></div>
+  <script>
+ro
+  let precoLivro = parseFloat(prompt("Digite o preço do livro:"));
+
+  let desconto = 0.1 * precoLivro;
+
+  let valorTotalCompra = precoLivro - desconto;
+
+  document.getElementById("resultadoTotal").innerHTML = `O valor total da compra com desconto é: R$${valorTotalCompra.toFixed(2)}`;
+</script>
+</body>
+</html>

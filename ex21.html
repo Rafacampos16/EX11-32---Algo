@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festa de Aniversário</title>
+</head>
+<body>
+    <h1>Exercício 21</h1>
+    <p>Você está organizando uma festa de aniversário e convidou 20 amigos. Cada amigo vai
+        trazer dois presentes. Quantos presentes você vai receber no total?</p>
+
+ 
+        <div id="resultadoPassos1"></div>
+      
+
+        <div id="resultadoPassos2"></div>
+
+  <script>
+ 
+    let amigos = 20;
+    let presentesPorAmigo = 2;
+    let totalPresentes = amigos * presentesPorAmigo;
+    document.getElementById('resultadoPassos2').innerHTML = `Total de presentes na festa de aniversário: ${totalPresentes}`;
+  </script>
+</body>
+</html>

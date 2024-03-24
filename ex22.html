@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Sorvetes</title>
+</head>
+<body>
+    <h1>Exercício 22</h1>
+    <p>Em um dia quente, você vendeu 50 sorvetes de baunilha e 30 sorvetes de chocolate. Cada
+        sorvete custa R$3,50. Quanto dinheiro você ganhou?
+        </p>
+
+        <div id="resultadoDinheiro"></div>
+  <script>
+
+    let sorvetesBaunilha = 50;
+    let sorvetesChocolate = 30;
+
+
+    let precoSorvete = 3.50;
+
+
+    let totalDinheiro = (sorvetesBaunilha + sorvetesChocolate) * precoSorvete;
+
+    document.getElementById('resultadoDinheiro').innerHTML = `Total de dinheiro ganho com vendas de sorvetes: R$${totalDinheiro.toFixed(2)}`;
+  </script>
+</body>
+</html>

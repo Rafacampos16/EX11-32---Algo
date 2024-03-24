@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartilhando Balas</title>
+</head>
+<body>
+    <h1>Exercício 28</h1>
+    <p>Você tem 24 balas e quer dividir igualmente entre 6 amigos. Quantas balas cada amigo
+        receberá?</p>
+
+        <div id="resultadoBalas"></div>
+  <script>
+ 
+    let totalBalas = 24;
+
+    let numAmigos = 6;
+
+    let balasPorAmigo = totalBalas / numAmigos;
+
+    document.getElementById('resultadoBalas').innerHTML = `Cada amigo receberá: ${balasPorAmigo} balas`;
+
+  </script>
+</body>
+</html>

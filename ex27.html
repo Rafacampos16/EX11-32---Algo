@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economizando para o Lanche</title>
+</head>
+<body>
+    <h1>Exercício 27</h1>
+    <p>Você quer economizar para comprar um lanche que custa R$7,50. Até agora, você já
+        economizou R$3,20. Quanto mais você precisa economizar?</p>
+
+        <div id="resultadoEconomia"></div>
+  <script>
+
+    let precoLanche = 7.50;
+
+    let quantiaEconomizada = 3.20;
+
+    let quantiaEconomizar = precoLanche - quantiaEconomizada;
+
+    document.getElementById('resultadoEconomia').innerHTML = `Você precisa economizar mais: R$${quantiaEconomizar.toFixed(2)}`;
+
+  </script>
+</body>
+</html>

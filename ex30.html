@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta de Restaurante</title>
+</head>
+<body>
+    <h1>Exercício 30</h1>
+    <p>Peça ao usuário para inserir o valor total da conta do restaurante e o percentual de
+        gorjeta. Calcule e exiba o valor total a ser pago.</p>
+
+        <div id="resultadoTotal"></div>
+  <script>
+ 
+  let valorTotalConta = parseFloat(prompt("Digite o valor total da conta do restaurante:"));
+
+  let percentualGorjeta = parseFloat(prompt("Digite o percentual de gorjeta (%):"));
+
+  let valorGorjeta = (percentualGorjeta / 100) * valorTotalConta;
+
+  let valorTotalPago = valorTotalConta + valorGorjeta;
+
+  document.getElementById("resultadoTotal").innerHTML = `O valor total a ser pago é: R$${valorTotalPago.toFixed(2)}`;
+  </script>
+</body>
+</html>
